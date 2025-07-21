@@ -1,0 +1,71 @@
+
+/* MakeSuggestionForm.css */
+/* NOTE TO DEVELOPERS: This file defines the right-side suggestion form styling */
+
+.make-suggestion-form {
+  flex: 1;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.make-suggestion-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.make-suggestion-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.make-suggestion-form label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.make-suggestion-form input,
+.make-suggestion-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  background-color: #e6e6e6;
+  font-size: 1rem;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.make-suggestion-form textarea {
+  height: 8rem;
+  font-family: inherit;
+}
+
+.button-group {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .make-suggestion-form {
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+  }
+
+  .make-suggestion-form label {
+    color: #f1f1f1;
+  }
+
+  .make-suggestion-form input,
+  .make-suggestion-form textarea {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border: 1px solid #444;
+  }
+
+}

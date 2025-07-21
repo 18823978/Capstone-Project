@@ -1,0 +1,114 @@
+.coordinator-dashboard-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 6rem 2rem 2rem 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.coordinator-dashboard-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 12rem);
+  gap: 2rem;
+  align-content: flex-start;
+}
+
+.coordinator-dashboard-buttons button {
+  padding: 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #e0e0e0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.coordinator-dashboard-buttons button:hover {
+  background-color: #ccc;
+}
+
+.connect-interface-section {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 32rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem 1.25rem;
+  box-sizing: border-box;
+}
+
+.connect-interface-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #2c2c2c;
+  text-align: center;
+}
+
+.connect-interface-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.logout-button {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: #e0e0e0;
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+  .connect-interface-section {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+
+  .connect-interface-title,
+  .connect-interface-subtitle {
+    color: #f0f0f0;
+  }
+
+  .coordinator-dashboard-buttons button {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+  }
+
+  .coordinator-dashboard-buttons button:hover {
+    background-color: #3a3a3a;
+  }
+}
+
+@media (max-width: 768px) {
+  .coordinator-dashboard-contents {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem 2rem 1rem;
+  }
+
+  .coordinator-dashboard-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .connect-interface-section {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}

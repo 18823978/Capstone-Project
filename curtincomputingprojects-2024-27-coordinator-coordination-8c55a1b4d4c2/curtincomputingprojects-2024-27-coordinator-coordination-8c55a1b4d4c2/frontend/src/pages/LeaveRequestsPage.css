@@ -1,0 +1,109 @@
+.leave-request-wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.leave-request-page {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 2rem;
+}
+
+.leave-request-single-panel {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.leave-request-single-panel h2 {
+  margin-bottom: 1rem;
+}
+
+.leave-request-single-panel label {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.leave-request-single-panel select,
+.leave-request-single-panel textarea,
+.leave-request-single-panel input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  background-color: #e6e6e6;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.leave-request-single-panel textarea {
+  height: 6rem;
+  resize: none;
+  font-family: inherit;
+}
+
+.date-range-picker {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.date-range-picker input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  background-color: #e6e6e6;
+  box-sizing: border-box;
+}
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .leave-request-single-panel {
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+  }
+
+  .leave-request-single-panel label {
+    color: #e0e0e0;
+  }
+
+  .leave-request-single-panel select,
+  .leave-request-single-panel textarea,
+  .leave-request-single-panel input,
+  .date-range-picker input {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border: 1px solid #444;
+  }
+
+  .button-row {
+    color: inherit;
+  }
+
+  .leave-request-wrapper {
+    background-color: #121212;
+  }
+
+  .react-datepicker {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+  }
+
+  .react-datepicker__day--selected,
+  .react-datepicker__day--keyboard-selected {
+    background-color: #555;
+  }
+}

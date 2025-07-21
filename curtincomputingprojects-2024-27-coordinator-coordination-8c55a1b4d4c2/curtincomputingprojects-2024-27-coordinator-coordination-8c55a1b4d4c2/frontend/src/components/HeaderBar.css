@@ -1,0 +1,65 @@
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.25rem;
+  padding: 0.9rem 1.5rem;
+  background-color: #c2970a;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  margin: auto;
+  color: #333;
+}
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-name {
+  height: 2rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.welcome-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+.profile-pic {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .header-bar {
+    justify-content: center;
+  }
+
+  .header-left {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-right {
+    display: none;
+  }
+}
+
